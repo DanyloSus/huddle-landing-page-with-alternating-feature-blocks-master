@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:wght@600&display=swap");
 @tailwind base;
 @tailwind components;
-@tailwind utilities;/*# sourceMappingURL=index.css.map */
+@tailwind utilities;
+:root,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+svg {
+  @apply fill-very-pale-cyan border h-8 w-8 hover:fill-pink transition-colors rounded-full p-1 cursor-pointer hover:border-pink;
+}
+
+footer a {
+  @apply hover:underline decoration-1 decoration-very-pale-cyan;
+}/*# sourceMappingURL=index.css.map */
