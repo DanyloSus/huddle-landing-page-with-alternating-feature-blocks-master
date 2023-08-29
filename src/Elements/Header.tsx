@@ -16,7 +16,7 @@ const Header = () => {
           Try It Free
         </button>
       </div>
-      <div className="relative z-10 flex px-[90px] items-center gap-20 text-very-dark-cyan mt-[70px] lg:flex-col lg:px-[38px] lg:text-center">
+      <div className="relative z-10 flex px-[90px] items-center gap-20 text-very-dark-cyan mt-[70px] lg:flex-col lg:px-[38px] lg:text-center reveal">
         <div className="max-w-[508px]">
           <h1 className="font-bold text-[40px] lg:text-2xl">
             Build The Community Your Fans Will Love

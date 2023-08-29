@@ -1,10 +1,29 @@
 import Header from "./Elements/Header";
 import Element from "./Elements/Element";
 import Footer from "./Elements/Footer";
+import { useEffect } from "react";
 
 const App = () => {
+  const reveal = () => {
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", reveal);
+
+    reveal();
+  }, []);
+
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Header />
       <div className="py-[160px] px-[104px] flex flex-col gap-10 lg:px-5 lg:py-[58px]">
         <Element
@@ -24,7 +43,7 @@ const App = () => {
           img="illustration-your-users.svg"
         />
       </div>
-      <div className="h-[280px] lg:h-[176px] max-w-[800px] shadow-2xl relative -bottom-[96px] lg:-bottom-[78px] rounded-xl mx-auto bg-white items-center justify-around flex flex-col lg:mx-auto lg:px-[26px]">
+      <div className="h-[280px] lg:h-[176px] max-w-[800px] shadow-2xl relative -bottom-[96px] lg:-bottom-[78px] rounded-xl mx-auto bg-white items-center justify-around flex flex-col lg:mx-auto lg:px-[26px] reveal">
         <h2 className="font-bold text-3xl text-very-dark-cyan lg:text-base">
           Ready To Build Your Community?
         </h2>
