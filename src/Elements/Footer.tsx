@@ -1,13 +1,13 @@
 const Footer = () => {
   return (
-    <footer className="pt-[196px] pb-16 px-20 bg-[#00252e] text-very-pale-cyan font-light">
+    <footer className="pt-[196px] pb-16 px-20 bg-[#00252e] text-very-pale-cyan font-light lg:px-4 lg:pt-[140px] lg:pb-[46px] lg:text-[15.5px] lg:overflow-x-hidden">
       <img
         src="./logoWhite.png"
         alt="logo white"
         className="h-6 object-cover mb-6"
       />
-      <div className="flex justify-between">
-        <div className="flex flex-col gap-3 w-[375px]">
+      <div className="flex lg:flex-col lg:gap-3 justify-between">
+        <div className="flex flex-col gap-3 w-[375px] lg:mb-5 lg:w-auto">
           <div className="flex items-start gap-5">
             <img src="./icon-location.svg" alt="icon location" />{" "}
             <p>
@@ -15,11 +15,11 @@ const Footer = () => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
           </div>
-          <div className="flex items-start gap-5">
+          <div className="flex items-center gap-5">
             <img src="./icon-phone.svg" alt="icon phone" />{" "}
             <p>+1-543-123-4567</p>
           </div>
-          <div className="flex items-start gap-5">
+          <div className="flex items-center gap-5">
             <img src="./icon-email.svg" alt="icon email" />{" "}
             <p>example@huddle.com</p>
           </div>
@@ -34,7 +34,7 @@ const Footer = () => {
           <a href="#">Blog</a>
           <a href="#">Contact Us</a>
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between lg:mt-5 lg:items-center lg:gap-5 lg:text-center lg:text-sm">
           <div className="flex gap-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"

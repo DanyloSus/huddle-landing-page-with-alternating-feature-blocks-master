@@ -10,6 +10,9 @@ export default {
         "very-dark-cyan": "hsl(192, 100%, 9%)",
         "grayish-blue": "hsl(208, 11%, 55%)",
       },
+      screens: {
+        lg: { max: "1024px" },
+      },
     },
   },
   plugins: [],

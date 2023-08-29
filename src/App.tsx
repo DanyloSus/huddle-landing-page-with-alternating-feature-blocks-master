@@ -6,7 +6,7 @@ const App = () => {
   return (
     <main>
       <Header />
-      <div className="py-[160px] px-[104px] flex flex-col gap-10">
+      <div className="py-[160px] px-[104px] flex flex-col gap-10 lg:px-5 lg:py-[58px]">
         <Element
           h2="Grow Together"
           p="Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form."
@@ -24,11 +24,11 @@ const App = () => {
           img="illustration-your-users.svg"
         />
       </div>
-      <div className="h-[280px] max-w-[800px] shadow-2xl relative -bottom-[96px] rounded-xl mx-auto bg-white items-center justify-around flex flex-col">
-        <h2 className="font-bold text-3xl text-very-dark-cyan ">
+      <div className="h-[280px] lg:h-[176px] max-w-[800px] shadow-2xl relative -bottom-[96px] lg:-bottom-[78px] rounded-xl mx-auto bg-white items-center justify-around flex flex-col lg:mx-auto lg:px-[26px]">
+        <h2 className="font-bold text-3xl text-very-dark-cyan lg:text-base">
           Ready To Build Your Community?
         </h2>
-        <button className="max-w-[400px] w-full h-20 bg-pink text-very-pale-cyan rounded-full hover:opacity-70 transition-opacity font-bold">
+        <button className="max-w-[400px] w-full h-20 bg-pink text-very-pale-cyan rounded-full hover:opacity-70 transition-opacity font-bold lg:w-[240px] lg:h-10 lg:text-xs">
           Get Started For Free
         </button>
       </div>
